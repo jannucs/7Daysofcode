@@ -64,3 +64,23 @@ for each_string in first_three:
     print(first_three[index])
     index+=1
 print(first_three)
+
+from csv import reader
+opened_file=open('AppleStore.csv')
+read_file=reader(opened_file)
+apps_data=list(read_file)
+opened_file.close()
+print(len(apps_data))
+print(apps_data[0])
+print(apps_data[1:3])
+
+opened_file = open('AppleStore.csv')
+from csv import reader
+read_file = reader(opened_file)
+apps_data = list(read_file)
+
+rating_sum=0
+for rating in apps_data[1:]:
+    rating1=float(rating[7])
+    rating_sum+=rating1
+avg_rating=rating_sum/len(apps_data[1:])
