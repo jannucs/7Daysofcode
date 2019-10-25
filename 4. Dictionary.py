@@ -34,3 +34,18 @@ for row in a_data_set:
         frequency_table[a_data_point] += 1
     else:
         frequency_table[a_data_point] = 1
+        
+#Creating a function with a single parameter:
+
+def square(number):
+    return number**2
+
+#Creating a function with more than one parameter:
+
+def add(x, y):
+    return x + y
+
+#Reusing a function within another function's definition:
+
+def add_to_square(x):
+    return square(x) + 1000  # we defined square() above
