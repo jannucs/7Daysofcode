@@ -1,0 +1,1 @@
+print(len(['Facebook', 0.0, 'USD', 2974676, 3.5]))
